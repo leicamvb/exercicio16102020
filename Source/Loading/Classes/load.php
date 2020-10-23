@@ -1,9 +1,9 @@
 <?php
 
 $usuario = new Source\Loading\Classes\Usuario();
-if($usuario->setUsuario(2,'Maciel','Sobrenome','leicamvb@msn.com'))
+if($usuario->setUsuario(2,'Maciel','Souza','leicamvb@msn.com'))
 {
-    echo $usuario->getNome();
+    echo 'Usuário '.$usuario->getNome().' '.$usuario->getSobrenome().', foi cadastrado com sucesso!';
 } 
 else{
     echo $usuario->getError();
